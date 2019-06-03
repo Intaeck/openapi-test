@@ -67,6 +67,7 @@ app.get('/test', (req, res) => {
                 //     console.log('data ===> ' ,data);
                 // })
                 //res.send(body.statusCode)
+                //var resdata = JSON.stringify(JSON.parse(String(body).replace(/\s/g,"").replace(/\n/g, "\\n").replace(/\r/g, "\\r")))
                 res.writeHead('200', {'Content-Type':'text/html;charset=utf8'});
                 res.write('<h1>hsKey 변환결과 입니다.</h1><br>');
                 res.write('<div><p>hsKey : ' + hsKey + '</p></div><hr>');                
@@ -140,6 +141,6 @@ app.use( errorHandler );
 
 
 // Express 서버 시작
-http.createServer(app).listen(app.get('port'), function(){
+var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
