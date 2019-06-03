@@ -9,16 +9,28 @@
 	<h1>hsKey 변환</h1>
 	<br>
 	<form method="post" action="/trans">
-		<table class="table table-hover">
+		<!-- <table class="table table-hover">
 			<tr>
 				<td><label>apikey</label></td>
 				<td><input  class="form-control" type="text" name="apikey" placeholder="Enter apikey"/></td>
 			</tr>
 			<tr>
 				<td><label>JSON data</label></td>
-				<td><input  class="form-control" type="text" name="bodydata" /></td>
+				<td>
+					<div class="container">
+						<textarea class="form-control col-sm-5" row="7" name="bodydata"></textarea>
+					</div>
+					<input  class="form-control" type="text" name="bodydata" /></td>
 			</tr>
-		</table>
+		</table> -->
+		<div class="form-group">
+			<label for="apikey">API KEY</label>
+			<input type="text" class="form-control input-sm" name="apikey" placeholder="Enter apikey" required/>
+		</div>
+		<div class="form-group">
+			<label for="bodydata">JSON data</label>
+			<textarea class="form-control col-lg-10" row="20" name="bodydata" placeholder="Enter JSON data" required></textarea>
+		</div>
 		
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
