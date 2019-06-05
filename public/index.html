@@ -8,7 +8,7 @@
 <body>
 	<h1>hsKey 변환</h1>
 	<br>
-	<form method="post" action="/trans">
+	<form method="post" action="/ejs">
 		<!-- <table class="table table-hover">
 			<tr>
 				<td><label>apikey</label></td>
@@ -23,19 +23,19 @@
 					<input  class="form-control" type="text" name="bodydata" /></td>
 			</tr>
 		</table> -->
-		<div class="form-group">
+		<div class="form-group w-75">
 			<label for="apikey">API KEY</label>
 			<input type="text" class="form-control input-sm" name="apikey" placeholder="Enter apikey" required/>
 		</div>
-		<div class="form-group">
+		<div class="form-group w-75">
 			<label for="bodydata">JSON data</label>
-			<textarea class="form-control col-lg-10" row="20" name="bodydata" placeholder="Enter JSON data" required></textarea>
+			<textarea class="form-control col-lg-20" rows="15" name="bodydata" placeholder="Enter JSON data" required></textarea>
 		</div>
 		
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<pre>   <button type="submit" class="btn btn-primary" al>Submit</button></pre>
 	</form>
-	<div>
-		
+	<hr>
+	<div class="form-group w-75">
 	</div>
 </body>
 

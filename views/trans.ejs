@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<title> hsKey 변환 </title>
+	</head>
+<body>
+	<h1>hsKey 변환</h1>
+	<br>
+	<form method="post" action="/trans">
+		<div class="form-group">
+			<label for="apikey">입력 된 API KEY</label>
+			<p class="h5"> <%= apikey %> </p>
+			<hr>
+		</div>
+		<div class="form-group">
+			<label for="bodydata">JSON data</label>
+			<p class="h5"> <%= bodydata %> </p>
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	<div>
+		<textarea class="form-control col-lg-10" row="30" name="result"><%= data %></textarea>
+	</div>
+	<hr>
+	<a class="h5" href='/'>돌아가기</a>
+</body>
+
+<script src = "/js/bootstrap.min.js"></script>
+
+</html>
