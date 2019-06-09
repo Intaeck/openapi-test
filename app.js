@@ -118,7 +118,7 @@ router.route('/ejs').post((req, res) => {
     //var hmac = crypto.createHmac('sha256', new Buffer(appkey))
     var encoded_hmac = hmac.update(JSON.stringify(bodydata)).digest('base64')
 
-    res.render('trans', {apikey:paramId, bodydata:bodydata, data: encoded_hmac})
+    res.render('trans', {apikey:paramId, bodydata: JSON.stringify(bodydata), data: encoded_hmac})
     // req.app.render('trans', encoded_hmac, function(err, html) {
     //     res.writeHead('200', {'Content-Type':'text/html;charset=utf8'});
 
