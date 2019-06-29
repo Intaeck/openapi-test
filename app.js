@@ -56,7 +56,8 @@ app.get('/test', (req, res) => {
     var reqPost = request({
         headers: {
             'apikey': apikey,
-            'hsKey' : hsKey
+            'hsKey' : hsKey,
+            'char-set' : 'utf-8'
         },
         method:'POST',
         //url: 'https://dev-openapi.kbstar.com:8443/land/getOfferList/ver1',
